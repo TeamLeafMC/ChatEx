@@ -2,8 +2,7 @@
 [![Create DevBuild](https://github.com/TheJeterLP/ChatEx/actions/workflows/autobuild.yml/badge.svg)](https://github.com/TheJeterLP/ChatEx/actions/workflows/autobuild.yml)
 [![JitPack](https://jitpack.io/v/TheJeterLP/ChatEx.svg)](https://jitpack.io/#TheJeterLP/ChatEx)
 ================================
-Recode of the original ChatManager from PermissionsEx, which is no longer supported.
-This is the only official version. 
+THIS IS NOT OFFICIAL
 
 If you need to report a bug or want to suggest a new feature, please use GitHubs Issue trackl.
 
