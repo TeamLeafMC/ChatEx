@@ -96,7 +96,7 @@ public class ChatListener implements Listener {
 
         boolean global = false;
         if (Config.RANGEMODE.getBoolean() || Config.BUNGEECORD.getBoolean()) {
-            if (chatMessage.startsWith(Config.RANGEPREFIX.getString())) {
+            if (chatMessage.startsWith(Config.RANGEPREFIX.getString()) || Config.FORCE_BUNGEECORD_GLOBAL_CHAT.getBoolean()) {
                 if (player.hasPermission("chatex.chat.global")) {
                     chatMessage = chatMessage.replaceFirst(Pattern.quote(Config.RANGEPREFIX.getString()), "");
                     format = PluginManager.getInstance().getGlobalMessageFormat(player);

@@ -32,6 +32,7 @@ public enum Config {
     CHECK_UPDATE("check-for-updates", true, "Should the plugin check for updates by itself?"),
     B_STATS("enable-bstats", true, "Do you want to use bstats?"),
     BUNGEECORD("bungeecord", false, "If you use bungeecord, players can chat cross-server wide with the range mode (! in front of the message)."),
+    FORCE_BUNGEECORD_GLOBAL_CHAT("force-bungeecord-global-chat", false, "Force global chat"),
     CROSS_SERVER_TIMEOUT("cross_server_timeout", 3, "If this timeout (In seconds) is exceeded the cross-server-message will not be send."),
     FORMAT("message-format", "%prefix%displayname%suffix: %message", "The standard message-format."),
     GLOBALFORMAT("global-message-format", "&9[%world] %prefix%displayname%suffix: &e%message", "The message-format if ranged-mode is enabled."),
@@ -67,7 +68,6 @@ public enum Config {
     RGB_COLORS_EXAMPLE("colors.$g", "#00ff00", "Default color code. &g in chat will be used with the #00ff00."),
     AFK_PLACEHOLDER("AfkPlaceholder.Enabled", false, "Enable the %afk placeholder. You can use it to display AFK players on tablist. (Requires Essentials or Purpur)."),
     AFK_FORMAT("AfkPlaceholder.format", "&r[&7AFK&r] ", "The format of the afk placeholder.");
-
     private final Object value;
     private final String path;
     private final String description;
